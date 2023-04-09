@@ -1,0 +1,32 @@
+void main() {
+  print('\n >>> Atividade-05-Lista <<<');  
+  List<String> lista = ['nome1','nome2'];
+  lista.add('nome3');
+  lista[1] = ('nome5');
+  lista.remove('nome5');
+  print(lista);
+  print(lista.contains('nome2') ? 'existe' : 'não existe');
+  lista = ['Maria', 'João', 'Ana', 'Pedro'];
+  lista.sort((a, b) => a.compareTo(b));
+  print(lista);
+  lista.sort((a, b) => b.compareTo(a));
+  print(lista);
+  List<String> listacopy = lista.sublist(0);
+  print(listacopy == lista ? 'é igual' : 'não é igual');
+  listacopy = lista.sublist(1,3);
+  String listStr = lista.toString();
+  print(listStr);  
+  List<int> listaNum = [1, 2, 3, 4, 5];
+  int soma = listaNum.reduce((valor, elemento) => valor + elemento);
+  print(soma);
+  double media = soma / listaNum.length;
+  print(media);
+  int maximo = listaNum.reduce((value, element) => value > element ? value : element);
+  print(maximo);
+  int minimo = listaNum.reduce((value, element) => value < element ? value : element);
+  print(minimo); 
+  int elemento = 3;
+  int contar = listaNum.where((item) => item == elemento).length;
+  print(contar);
+  print(lista.toSet().toList());
+}

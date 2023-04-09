@@ -1,0 +1,74 @@
+﻿
+
+01) O que é um mapa em Dart?
+Uma coleção de pares chave/valor, da qual você recupera um valor usando sua chave associada.
+
+02) Como criar um mapa vazio em Dart?
+vazio:
+ Map<String,String> mapa = {};
+nulo:
+ Map<String,String>? mapa;
+
+03) Como criar um mapa com elementos em Dart?
+ Map<String,String> mapa = {'nome1' : 'value1', 'nome2' : 'value2'};
+
+04) Qual a diferença entre uma lista e um mapa em Dart?
+na lista existe o valor indexável, enquanto que no mapa existe uma chave de busca de valor.
+
+05) Como adicionar um elemento a um mapa em Dart?
+  mapa.addAll({'nome3':'value3'});
+
+06) Como remover um elemento de um mapa em Dart?
+  mapa.remove('nome1');
+
+07) Como verificar se um mapa contém uma determinada chave em Dart?
+  print(mapa.containsKey('nome2') ? 'existe' : 'não existe');
+
+08) Como verificar se um mapa é vazio em Dart?
+  print(mapa.isEmpty ? 'vazio' : 'não vazio');
+
+09) Como acessar o valor de uma chave em um mapa em Dart?
+  print(mapa['nome2']);
+
+10) Como alterar o valor de uma chave em um mapa em Dart?
+  mapa['nome2'] = 'value5';
+
+11) Como obter todas as chaves de um mapa em Dart?
+  print(mapa.keys);
+
+12) Como obter todos os valores de um mapa em Dart?
+  print(mapa.values);
+
+13) Como verificar se duas chaves em um mapa são iguais em Dart?
+  print(mapa['nome2'] == mapa['nome3'] ? 'é igual' : 'não é igual');
+
+14) Como criar um mapa a partir de duas listas em Dart?
+  List<String> chaves = ['nome1', 'nome2', 'nome3'];
+  List<String> valores = ['value1', 'value2', 'value3'];
+  Map<String,String> mapa = Map.fromIterables(chaves, valores);
+  print(mapa); 
+
+15) Como criar uma lista de chaves a partir de um mapa em Dart?
+  List<String> listaChaves = mapa.keys.toList();
+  print(listaChaves);
+
+16) Como criar uma lista de valores a partir de um mapa em Dart?
+  List<String> listaValores = mapa.values.toList();
+  print(listaValores);
+
+17) Como transformar um mapa em uma lista de pares chave-valor em Dart?
+  Map<String,String> mapa = {'nome1' : 'value1', 'nome2' : 'value2', 'nome3' : 'value3'};
+  List<MapEntry<String, String>> listaMapa = mapa.entries.toList();
+  List<dynamic> listaPares = listaMapa.map((entry) => [entry.key, entry.value]).toList();
+  print(listaPares); 
+
+18) Como remover todos os elementos de um mapa em Dart?
+  mapa.clear();
+
+19) Como calcular o tamanho de um mapa em Dart?
+  print(mapa.length); 
+
+20) Como verificar se dois mapas são iguais em Dart?
+  Map<String,String> mapa = {'nome1' : 'value1', 'nome2' : 'value2', 'nome3' : 'value3'};
+  Map<String,String> mapa2 = {'nome1' : 'value1', 'nome2' : 'value2', 'nome3' : 'value3'};
+  print(mapa == mapa2 ? 'é igual' : 'não é igual');

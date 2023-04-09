@@ -1,0 +1,87 @@
+﻿Responda às seguintes questões:
+
+01) O que é um conjunto em Dart?
+Uma coleção de objetos em que cada objeto pode ocorrer apenas uma vez.
+
+02) Como criar um conjunto vazio em Dart?
+vazio:
+  Set<String> conjunto = {};
+nulo:
+  Set<String>? conjunto;
+
+03) Como criar um conjunto com elementos em Dart?
+  Set<String> conjunto = {'nome1','nome2'};
+
+04) Qual a diferença entre um conjunto e uma lista em Dart?
+na lista os objetos é indexáveis e no conjunto são varios objetos sem repetição
+
+05) Como adicionar um elemento a um conjunto em Dart?
+  conjunto.add('nome3');
+
+06) Como remover um elemento de um conjunto em Dart?
+  conjunto.remove('nome1');
+
+07) Como verificar se um conjunto contém um determinado elemento em Dart?
+  print(conjunto.contains('nome2') ? 'existe' : 'não existe');
+
+08) Como verificar se um conjunto é vazio em Dart?
+  print(conjunto.isEmpty ? 'vazio' : 'não vazio');
+
+09) Como unir dois conjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome4','nome5'};
+  Set<String> conjuntoUniao = conjunto.union(conjunto2);
+  print(conjuntoUniao);
+
+10) Como obter a interseção de dois conjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome3','nome4'};
+  Set<String> conjuntoInter = conjunto.intersection(conjunto2);
+  print(conjuntoInter);
+
+11) Como obter a diferença entre dois conjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome3','nome4'};
+  Set<String> conjuntoDif = conjunto.difference(conjunto2);
+  print(conjuntoDif);
+
+12) Como verificar se um conjunto é subconjunto de outro conjunto em Dart?
+  Set<String> conjunto =  {'nome1','nome2', 'nome3', 'nome4'};
+  Set<String> conjunto2 = {'nome3','nome4'};
+  print(conjunto.containsAll(conjunto2) ? 'é subconjunto' : 'não é subconjunto');
+
+13) Como verificar se dois conjuntos são iguais em Dart?
+  print(conjunto == conjunto2 ? 'é igual' : 'não é igual');
+
+14) Como criar um conjunto a partir de uma lista em Dart?
+  Set<String> listConj = conjList.toSet();
+  print(listConj);
+
+15) Como criar uma lista a partir de um conjunto em Dart?
+  List<String> conjList = conjunto.toList();
+  print(conjList); 
+
+16) Como transformar um conjunto em uma lista de strings em Dart?
+  String conjStr = conjunto.toString();
+  print(conjStr);
+
+17) Como calcular a união de vários conjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome4','nome5'};
+  Set<String> conjuntoUniao = conjunto.union(conjunto2);
+  print(conjuntoUniao);
+
+18) Como calcular a interseção de vários conjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome3','nome4'};
+  Set<String> conjuntoInter = conjunto.intersection(conjunto2);
+  print(conjuntoInter);
+
+19) Como verificar se dois conjuntos são disjuntos em Dart?
+  Set<String> conjunto = {'nome2','nome3'};
+  Set<String> conjunto2 = {'nome3','nome4'};
+  Set<String> conjuntoDif = conjunto.difference(conjunto2);
+  print(conjuntoDif)
+
+20) Como remover todos os elementos duplicados de uma lista usando um conjunto em Dart?
+  print(conjunto.toSet());
